@@ -1,0 +1,98 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+.avatar {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.avatar > i.icon {
+    font-size: 6rem;
+    color: #999;
+}
+
+.stateButton {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.stateButton a {
+    margin: 0 1rem;
+    color: #777;
+    font-weight: bold;
+}
+
+.agent-content {
+    padding: 0;
+    font-weight: 800;
+}
+
+.agent-content .item {
+    font-size: 18px !important;
+    padding: 1.5rem !important;
+    padding-left: 49px !important;
+}
+
+.agent-content .item-divider-ios {
+    padding: 0 !important;
+    height: 1.6rem;
+}
+
+.noBorder {
+    border-width: 0 !important;
+}
+
+.agent-content .item-complex {
+    padding: 0 !important;
+}
+
+.feedback input[type='text'] {
+    border: 0.1rem solid #eeeeee;
+    width: 100%;
+}
+
+.feedback textarea {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    height: 20rem;
+}
+
+.codeInput {
+    display: flex;
+    padding-left: 0 !important;
+}
+
+.codeInput input[type='text'] {
+    border: 1px solid #eeeeee;
+    flex: 55%;
+    height: auto;
+    align-self: stretch;
+    padding-left: 0.8rem;
+}
+
+.codeInput button {
+    flex: 45%;
+}
+
+/*test*/
+.blue {
+    background-color: blue;
+    padding: 5rem 0;
+}
+
+.yellow {
+    background-color: yellow;
+    padding: 5rem 0;
+}
+
+.pink {
+    background-color: pink;
+    padding: 5rem 0;
+
+}

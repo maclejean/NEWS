@@ -1,0 +1,13 @@
+<ion-view view-title="文章详情">
+    <ion-content class="has-header detail" lazy-scroll>
+        <h1>{{detail.title}}</h1>
+        <div ng-bind-html="detail.content" class="padding content" ng-style="detailStyle"></div>
+    </ion-content>
+    <div class="bar bar-footer bar-light selfDefinedButtons">
+        <button class="button button-clear" ng-click="showPopup()"><i
+                class="button button-clear button-dark button-large">A</i>字号
+        </button>
+        <button class="icon  button button-clear button-dark" ng-class="{'ion-ios-star-outline':!isLike,'ion-ios-star':isLike}" ng-click="likeIt()">收藏
+        </button>
+    </div>
+</ion-view>

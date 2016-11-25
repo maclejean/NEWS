@@ -1,0 +1,16 @@
+<ion-view view-title="我的收藏">
+    <ion-nav-buttons side="right">
+        <button class="button icon ion-android-delete" ng-click="clear()">清空</button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <ion-list ng-repeat="item in list">
+            <ion-item href="#/tab/like/{{item.aid}}" class="item-thumbnail-left">
+                <img ng-src="{{item.pic | src:true}}" onerror="javascript:this.src='noPic.jpg'">
+                <p ng-bind="item.title"></p>
+                <p ng-bind="item.summary" class="padding-horizontal"></p>
+                <ion-option-button class="button-assertive" ng-click="removeItem(item.aid,$index)">删除
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

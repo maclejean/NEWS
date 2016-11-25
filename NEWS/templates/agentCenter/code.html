@@ -1,0 +1,22 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <button class="icon ion-android-arrow-back button button-clear" on-tap="backForward()"></button>
+        <div class="title">
+            手机验证码
+        </div>
+    </ion-header-bar>
+    <ion-content class="has-header">
+        <div class="padding">
+            <h3 class="positive">马上验证手机，激活你的账户</h3>
+            <p>验证码以通过短信方式发送给{{user.phone}}，请输入验证码完成验证，手机绑定是为了验证用户的真实性和提高账号安全</p>
+            <div class="item-input codeInput">
+                <input type="text" placeholder="输入手机验证码" ng-model="user.codeConf">
+                <button class="button button-{{klass}}" ng-click="oneMin()">重发<span ng-if="!clickable">({{one}})</span>
+                </button>
+            </div>
+            <div class="padding">
+                <button class="button button-positive button-block" ng-click="goLogin()">确定</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

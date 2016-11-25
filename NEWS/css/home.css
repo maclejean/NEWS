@@ -1,0 +1,47 @@
+.home-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-buttons > .home-button {
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+.home-buttons p.light {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.whiteSpace {
+    width: 10px;
+    box-sizing: border-box;
+}
+
+.content-title {
+    font-size: 1.7rem;
+    color: #999;
+    font-weight: bold;
+
+}
+
+.content-title:before {
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    width: 4px;
+    background-color: red;
+    position: relative;
+    top: -1px;
+}
+
+.analyze .scroll {
+    width: 100%;
+    height: 100%;
+}
+
+.analyze iframe::-webkit-scrollbar {
+    display: none;
+}

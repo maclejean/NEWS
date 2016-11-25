@@ -1,0 +1,49 @@
+<ion-view>
+    <ion-nav-title align="center">
+        <p>我</p>
+    </ion-nav-title>
+    <ion-content class="has-header">
+        <ion-list>
+            <ion-item class="noBorder">
+                <div class="avatar">
+                    <!--图标ng-if-->
+                    <i class="icon ion-happy-outline" ng-if="hasLogin"></i>
+                    <i class="icon ion-android-person" ng-if="!hasLogin"></i>
+                </div>
+                <!--ng-if-->
+                <div class="stateButton" ng-if="!hasLogin">
+                    <a ui-sref="login">立即登录</a>
+                    <a ui-sref="tab.registerLogin">立即注册</a>
+                </div>
+                <div class="stateButton" ng-if="hasLogin">
+                    <a on-tap="quit()" href="javascript:;" class="positive">退出登录</a>
+                </div>
+            </ion-item>
+            <!--ng-if-->
+            <ion-item class="agent-content">
+                <ion-list>
+                    <ion-item class="item-divider-ios noBorder"></ion-item>
+                    <ion-item class="item-icon-left" href="">
+                        <i class="icon ion-ios-pulse-strong positive"></i><span>我的健康</span>
+                    </ion-item>
+                    <ion-item class="item-icon-left" href="#/tab/like">
+                        <i class="icon ion-ios-star balanced"></i><span>我的收藏</span>
+                    </ion-item>
+                    <ion-item class="item-divider-ios"></ion-item>
+                    <ion-item class="item-icon-left" href="">
+                        <i class="icon ion-chatbubble-working energized"></i><span>在线客服</span>
+                    </ion-item>
+                    <ion-item class="item-icon-left" href="">
+                        <i class="icon ion-help-circled positive"></i><span>帮助手册</span>
+                    </ion-item>
+                    <ion-item class="item-divider-ios"></ion-item>
+                    <ion-item class="item-icon-left item-borderless" href="#/tab/suggest">
+                        <i class="icon ion-chatbubble dark"></i><span>意见反馈</span>
+                    </ion-item>
+
+                </ion-list>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>
